@@ -16,7 +16,8 @@ class Item extends PureComponent {
     refsFromProvider: PropTypes.oneOfType([
       PropTypes.object,
       PropTypes.arrayOf(PropTypes.object)
-    ])
+    ]),
+    node: PropTypes.object
   };
 
   static defaultProps = {
@@ -27,7 +28,8 @@ class Item extends PureComponent {
     },
     targetNode: {},
     data: null,
-    refsFromProvider: []
+    refsFromProvider: [],
+    node: {}
   };
 
   handleClick = e => {
@@ -36,6 +38,7 @@ class Item extends PureComponent {
       : this.props.onClick(
         this.props.targetNode,
       this.props.refsFromProvider,
+      this.props.node,
       this.props.data
     );
   };
