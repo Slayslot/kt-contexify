@@ -27,7 +27,7 @@ describe('Menu Item', () => {
   it(
     'Should pass the targetNode, the refs and the data props to the provided callback when clicked',
     () => {
-      const click = (targetNode, refs, data) => {
+      const click = (targetNode, refs, node, data) => {
         expect(targetNode.foo).toBe('bar');
         expect(refs[0].baz).toBe('baz');
         expect(data).toBe('data');

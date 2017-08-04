@@ -20,7 +20,7 @@
     "build": "NODE_ENV=production  npm run bundle && babel --ignore=__tests__ src -d lib",
     "build:dev": "NODE_ENV=development npm run bundle && babel --ignore=__tests__ src -d lib",
     "postbuild": "npm run style",
-    "prestyle": "sass src/scss/main.scss dist/ReactContexify.css",
+    "prestyle": "npm-sass src/scss/main.scss > dist/ReactContexify.css",
     "style": "postcss --use autoprefixer -b 'last 2 versions' < dist/ReactContexify.css | cssnano --no-reduceIdents > dist/ReactContexify.min.css"
   },
   "repository": {
@@ -50,6 +50,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
     "jest": "^20.0.1",
+    "npm-sass": "^2.2.1",
     "postcss": "^6.0.1",
     "postcss-cli": "^4.0.0",
     "react": "^15.5.4",
