@@ -18,9 +18,9 @@ Live demo [here](https://fkhadra.github.io/react-contexify/)
 ## Installation
 
 ```
-$ yarn add react-contexify
+$ yarn add kt-contexify
 or
-$ npm install --save react-contexify
+$ npm install --save kt-contexify
 ```
 
 You also need to include the css file provided. Otherwise it wont work as expected. 
