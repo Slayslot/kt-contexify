@@ -36,9 +36,9 @@ class Item extends PureComponent {
     this.props.disabled
       ? e.stopPropagation()
       : this.props.onClick(
+        this.props.node,
         this.props.targetNode,
       this.props.refsFromProvider,
-      this.props.node,
       this.props.data
     );
   };
