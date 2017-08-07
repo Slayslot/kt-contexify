@@ -5,7 +5,7 @@
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.3) 0 10px 20px, #eeeeee 0 0 0 1px;
-  padding: 5px 0; }
+  z-index: 101; }
   .react-contexify__separator {
     float: left;
     width: 100%;
@@ -23,11 +23,12 @@
       opacity: .5; }
     .react-contexify__item__data {
       min-width: 140px;
-      padding: 6px 12px;
+      padding: 5px 10px;
       display: inline-block;
       text-align: left;
       white-space: nowrap;
-      color: #333; }
+      color: #333;
+      font-size: 12px; }
     .react-contexify__item__icon {
       font-size: inherit;
       margin-right: 5px; }
@@ -46,15 +47,15 @@
     text-align: center; }
 
 .react-contexify__theme--light {
-  padding: 6px 0;
+  padding: 5px 0 5px 10px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 0 0 1px #eee; }
   .react-contexify__theme--light .react-contexify__separator {
     background-color: #eee; }
   .react-contexify__theme--light .react-contexify__item:not(.react-contexify__item--disabled):hover .react-contexify__item__data {
-    color: #4393e6;
-    background-color: #E0EEFD; }
+    color: #f06428;
+    background-color: #fff; }
   .react-contexify__theme--light .react-contexify__item__data {
-    color: #666; }
+    color: #959595; }
   .react-contexify__theme--light .react-contexify__item__icon {
     margin-right: 8px;
     width: 12px;
